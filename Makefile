@@ -2,4 +2,4 @@ CC=gcc
 CFLAGS=-I.
 
 build:
-	$(CC) -o main src/main.c  src/sudoku_io.c
+	$(CC) -o sudoku_solver src/main.c  src/sudoku_io.c
