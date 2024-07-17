@@ -1,3 +1,10 @@
+
+/**
+ * @brief Represents a Sudoku grid.
+ *
+ * This structure holds a 9x9 matrix of integers, where each element represents a cell in a Sudoku puzzle.
+ * The values are expected to be in the range from 0 to 9, where 0 typically represents an empty cell.
+ */
 struct sudokuGrid{
     int matrix[9][9];
 } typedef sudokuGrid;
@@ -22,3 +29,10 @@ sudokuGrid* loadGrid(char filename[]);
  * @param[in] grid A pointer to the Sudoku grid to print.
  */
 void printGrid(sudokuGrid *grid);
+
+/**
+ * Solves a Sudoku using a backtracking algorithm
+ * 
+ * @param[in] grid The Sudoku grid
+ */
+void backtracking_solve(sudokuGrid *grid);
